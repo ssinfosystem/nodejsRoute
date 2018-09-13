@@ -1,0 +1,17 @@
+<% include partials/header %>
+    <h1>You have requested below details for the Student :</h1>
+    <p>
+        Name : <%= name%> <br>
+        ID : <%= id%> <br>
+        Total Marks : <%= totalmarks%> <br>
+        <h1>Subject</h1>
+        <ul>
+            <% subjects.forEach(function(item){ %>
+                <li>
+                    <%= item %>
+                </li>
+
+            <%}); %>
+        </ul>
+    </p>
+    <% include partials/footer %>
